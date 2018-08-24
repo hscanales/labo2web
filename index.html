@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio 2</title>
+</head>
+<body>
+   <h1 align="center" >Curriculum Vitae</h1>
+   <section>
+   <form action="#">
+   <fieldset>
+       <legend>Personal Data</legend>
+       <div>
+        <label for="dui">DUI:</label>
+        <input type="text" name="dui" id="dui" placeholder="04813412-8" required pattern="[0-9]+\-\+[0-9].{10,10}" title="Please add 9 numbers"> 
+     
+           <label for="name">First Name:</label>
+           <input type="text" name="name" id="name" placeholder="Joey" required pattern="[a-z]">
+     
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Triviani" required pattern="[a-z]">
+        
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" > M
+        <input type="radio" name="gender" id="gender" required> F
+    </div>
+        <div>
+            <label for="TelNum">Contact Number: </label>
+            <input type="tel" name="TelNum" id="TelNum" placeholder="75419930" required pattern="[0-9]">
+            <label for="date">Birthdate:</label>
+            <input type="date" name="date" id="date" required> 
+            <label for="status"> Civil Status: </label>
+            <select required>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Complicated</option>
+            </select>
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" required>
+        </div>
+
+   </fieldset>
+</section>
+
+<section>
+<fieldset>
+    <legend>Work Experience</legend>
+    <textarea rows="10" cols="200" placeholder="Hello World" id="WorkExperience" required></textarea>
+</fieldset>
+</section>
+
+<section>
+    <fieldset>
+        <legend>Academic Training</legend>
+        <textarea rows="10" cols="200" placeholder="Hello World" id="Academic Training" required></textarea>
+    </fieldset>
+    </section>
+
+    <fieldset>
+        <legend>Further Training</legend>
+        <fieldset>
+            <legend>Programming Languagues</legend>
+            <input type="checkbox" name="check[]" id="check[]" > Java
+
+            <input type="checkbox" name="check[]" id="check[]" > Python
+
+            <input type="checkbox" name="check[]" id="check[]" > C++
+
+            <input type="checkbox" name="check[]" id="check[]" > Ruby
+        </fieldset>
+        <fieldset>
+            <legend>Web Technologies</legend>
+            <input type="checkbox" name="web[]" id="web[]" > HTML5
+
+            <input type="checkbox" name="web[]" id="web[]" > CSS/CSS3
+
+            <input type="checkbox" name="web[]" id="web[]" > materialize CSS
+
+            <input type="checkbox" name="web[]" id="web[]" > JavaScript
+
+            <input type="checkbox" name="web[]" id="web[]" > Node.js
+
+            <input type="checkbox" name="web[]" id="web[]" > Spring MVC
+        </fieldset>
+    </fieldset>
+
+<input type="submit" value="Send">
+<a href="laboratiori1.html"><input type="button" value="Cancel"></a>
+</form>
+
+</body>
+<footer>
+    <a href="https://visuallatam.tech">visuallatam tech&copy;</a>
+</footer>
+</html>

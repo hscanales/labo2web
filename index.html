@@ -14,13 +14,13 @@
        <legend>Personal Data</legend>
        <div>
         <label for="dui">DUI:</label>
-        <input type="text" name="dui" id="dui" placeholder="04813412-8" required pattern="[0-9]+\-\+[0-9].{10,10}" title="Please add 9 numbers"> 
+        <input type="text" name="dui" id="dui" placeholder="04813412-8" required pattern="[0-9][1-9]{7}-[1-9]" title="Please add 9 numbers"> 
      
            <label for="name">First Name:</label>
-           <input type="text" name="name" id="name" placeholder="Joey" required pattern="[a-z]">
+           <input type="text" name="name" id="name" placeholder="Joey" required pattern="[a-z]{1.10}">
      
         <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname" placeholder="Triviani" required pattern="[a-z]">
+        <input type="text" name="lastname" id="lastname" placeholder="Triviani" required pattern="[a-z]{1,10}">
         
         <label for="gender">Gender</label>
         <input type="radio" name="gender" id="gender" > M
@@ -28,7 +28,7 @@
     </div>
         <div>
             <label for="TelNum">Contact Number: </label>
-            <input type="tel" name="TelNum" id="TelNum" placeholder="75419930" required pattern="[0-9]">
+            <input type="tel" name="TelNum" id="TelNum" placeholder="75419930" required pattern="[0-9]{1,100}">
             <label for="date">Birthdate:</label>
             <input type="date" name="date" id="date" required> 
             <label for="status"> Civil Status: </label>
